@@ -1,0 +1,96 @@
+#header.full-header {
+  width: 100%;
+
+  $c-header: rgba(255, 255, 255, 0.80);
+  $c-menu-trigger: $c-black-blue;
+
+  position: absolute;
+  @media screen and (max-width: $width-md) {
+    position: relative;
+  }
+  font-family: $ff-oswald;
+
+  #primary-menu > ul {
+    margin-right: 0;
+    border-right: none;
+    @include nav-color(#5D6F7F);
+    @include nav-color(#334663, 1);
+    @include nav-color(#52931D, 2);
+    @include nav-color(#7F658F, 3);
+  }
+
+  #primary-menu-trigger {
+    font-size: 30px;
+    pointer-events: auto;
+  }
+  #header-wrap {
+    background-color: $c-header;
+    border-bottom: 0;
+  }
+  #logo {
+    padding-right: 0;
+    margin-right: 0px;
+    border-right: none;
+    padding-left: 30px;
+  }
+
+
+  
+  //when you scroll down
+  &.sticky-header {
+    #header-wrap {
+      background-color: #FFFFFF;
+    }
+  }
+  #logo img {
+    padding: 2px;
+    padding-left: 5px;
+  }
+  @media screen and (max-width: $width-md) {
+    #logo {
+      img {
+        margin-right: auto;
+        padding: $spacing-xs;
+        max-width: 240px;
+      }
+    }
+    #primary-menu-trigger {
+      right: 0;
+      left: inherit;
+      color: $c-menu-trigger;
+    }
+  }
+  
+}
+
+#primary-menu ul li > a {
+  font-family: $ff-oswald;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: none;
+  font-size: 17px;
+  padding: 29px 12px;
+  @media screen and (max-width: 1300px) {
+    font-size: 16px;
+    padding: 29px 10px;
+    padding-bottom: 10px;
+  }
+  @media screen and (max-width: $width-lg) {
+    font-size: 15px;
+    letter-spacing: 0.7px;
+    padding: 29px 6px;
+    padding-bottom: 10px;
+  }
+  @media screen and (max-width: 1090px) {
+    font-size: 13px;
+  }
+  @media screen and (max-width: 991px) {
+    padding-left: 40px !important;
+    font-size: 18px;
+  }
+  @media screen and (max-width: $width-sm) {
+  }
+  @media screen and (max-width: $width-xs) {
+  }
+  padding-bottom: 10px;
+}

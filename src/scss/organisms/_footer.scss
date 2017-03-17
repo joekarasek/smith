@@ -1,0 +1,48 @@
+//Overrides for Canvas
+#footer {
+  position: relative;
+  background-color: #4E748B;
+  border-top: none;
+  a {
+    @include link-color($c-white);
+  }
+  p {
+    font-weight: 100;
+    font-size: 14px;
+    color: white;
+    @media screen and (max-width: $width-md) {
+      float: none;
+    }
+  }
+  @media screen and (max-width: $width-md) {
+    text-align: center;
+  }
+
+  .footer-padding {
+    padding: 40px;
+    @media (max-width: $width-md) {
+      padding: 20px;
+    }
+  }
+  .tyson-steele-text {
+    font-family: $ff-lato;
+    font-weight: 400;
+  }
+
+  .flex--wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: $width-md) {
+      flex-direction: column-reverse;
+      .social-media-links {
+        display: inline-block;
+        a {
+          float: none;
+        }
+      }
+    }
+  }
+
+}
+
+

@@ -1,0 +1,153 @@
+#section-about {
+
+  .heading {
+    h2{
+      color: #3A5464;
+    }
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 2px solid #85B04B;
+    @media screen and (max-width: $width-md) {
+      padding-bottom: 0;
+    }
+
+    h3 {
+      font-family: $ff-lato;
+      font-weight: 700;
+      color: #4e748a;
+      margin-bottom: 0;
+    }
+
+    h4 {
+      font-family: $ff-lato;
+      font-weight: 400;
+      color: #4e748a;
+    }
+
+    p {
+      color: #535353;
+    }
+
+    &--bradley-adams {
+      background-image: url('./../assets/team/brad.jpg');
+      background-position: 35% top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      @media screen and (max-width: $width-md) {
+        background-image: none;
+      }
+      @media screen and (max-width: $width-md) {
+        padding-top: 0;
+      }
+    }
+    &--meredith-adams {
+      background-image: url('./../assets/team/meredith.jpg');
+      background-position: 70% top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      @media screen and (max-width: $width-md) {
+        background-image: none;
+      }
+    }
+    &--smith {
+      background-image: url('./../assets/team/deborah.jpg');
+      background-position: 10% top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      @media screen and (max-width: $width-md) {
+        background-image: none;
+      }
+    }
+    &--pilkington {
+      background-image: url('./../assets/team/emilee.jpg');
+      background-position: 70% top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      @media screen and (max-width: $width-md) {
+        background-image: none;
+      }
+    }
+
+    &__image--mobile {
+      width: 100%;
+    }
+  }
+
+
+  // team carosuel
+  .section-team-carosuel {
+    background-color: rgba(#DDDDDD, 0.23);
+    h5 {
+      text-align: center;
+      color: #024378;
+      font-family: $ff-cardo;
+      font-weight: 700;
+    }
+  }
+  .team-carousel--wrapper {
+    padding: 30px 60px;
+  }
+  .image-wrapper {
+    @include hover-plus();
+  }
+
+  .team-modals {
+    h5 {
+      margin-bottom: 0;
+    }
+    img {
+      max-width: 200px;
+    }
+    .modal-image {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
+
+  .video-promo {
+    height: 600px;
+    background-image: url('/assets/video-block-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .link-wrapper {
+      @include vertical-center();
+      text-align: center;
+      h2 {
+        color: #ffffff;
+        font-weight: 900;
+        font-family: $ff-open;
+      }
+      a {
+        @include link-color(#ffffff);
+      }
+    }
+  }
+}
+
+#meet-the-team {
+  .heading {
+    h2{
+      color: #3A5464;
+      margin-bottom: 5px;
+    }
+    p {
+      color: #535353;
+    }
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(
+                    #B7DDF4, #FFFFFF
+    );
+  }
+  .image {
+    width: 100%;
+  }
+}
