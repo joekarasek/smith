@@ -35,6 +35,8 @@ button.close {
   @include iPhoneFormFix;
 }
 
-.modal-title {
-
+.modal-dialog {
+  img {
+    max-height: 250px !important;
+  }
 }

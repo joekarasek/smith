@@ -1,0 +1,44 @@
+<div class="team-carousel">
+
+    <div class="team-carousel__carousel">
+        <div class="container">
+            <div class="team-carousel--wrapper">
+                <div class="owl-carousel js-services-carousel">
+                    {% for person in team %}
+                        <a href="#" data-toggle="modal" data-target="#team-modal{{ person.modalTarget }}">
+                            <div class="card card--{{ person.name }}">
+                                <div class="card__image" style="background-image: url('/assets/team/{{ person.image }}')"></div>
+                                <div class="card__text">
+                                    <h5 class="card__title">{{ person.name }}</h5>
+                                    <h6 class="card__sub">{{ person.title }}</h6>
+                                </div>
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Service Modals-->
+    <div class="team-modal-wrapper">
+        {% for person in team %}
+            <div id="team-modal{{ person.modalTarget }}" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">{{ person.name }}</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-image"><img src="assets/team/{{ person.image }}" alt="team member"></div>
+                            {% for paragraph in person.text %}
+                                <p>{{ paragraph }}</p>
+                            {% endfor %}
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+        {% endfor %}
+    </div>
+</div>

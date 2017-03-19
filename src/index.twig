@@ -26,7 +26,7 @@
 'image': 'digital-xray.jpg',
 'modalTarget': 'digitalxrays',
 'text': ['Our use of digital x-ray technology reduces your radiation exposure and eliminates the use of chemicals. It’s better for you and the environment.',
-    'It\'s also easy for you to see what the doctor sees. Your digital x-ray can be seen on a computer screen located next to your dental chair. This helps you understand your needs and make informed choices about your treatment.'
+'It\'s also easy for you to see what the doctor sees. Your digital x-ray can be seen on a computer screen located next to your dental chair. This helps you understand your needs and make informed choices about your treatment.'
 ]
 },
 {
@@ -35,7 +35,7 @@
 'image': 'crowns-and-bridges.jpg',
 'modalTarget': 'crowns-and-bridges',
 'text': ['Protect and keep badly decayed or fractured teeth while maintaining a beautiful smile. Made to perfectly match the shape and shade of your other teeth, they’re durable, strong, and undetectable.',
-    'Crowns should be placed before the tooth is so decayed that it may fracture. This can often help prevent the expense of root canal therapy in the future. If a tooth is too damaged to have a crown applied, a porcelain bridge may be a good alternative.'
+'Crowns should be placed before the tooth is so decayed that it may fracture. This can often help prevent the expense of root canal therapy in the future. If a tooth is too damaged to have a crown applied, a porcelain bridge may be a good alternative.'
 ]
 },
 {
@@ -97,18 +97,56 @@
 },
 ] %}
 
+{% set team = [
+{
+"name": "Elle",
+"modalTarget": "Elle",
+"image": "elle.jpg",
+"title": " Office Administration",
+"text": ["Elle grew up in West Bend, WI and attended Concordia University Wisconsin where she earned her bachelor’s degree in Educational Studies. Prior to working at Green Tree Dental, she worked at West Bend Mutual Insurance Company, handling worker’s compensation claims. In her free time, she enjoys spending time with her family, watching sporting events, making crafts and snuggling with her fur-babies."]
+},
+{
+"name": "Anna B.",
+"modalTarget": "Anna",
+"image": "anna-b.jpg",
+"title": " Dental Assistant",
+"text": ["Anna has been working as a dental assistant with Dr. Bill since 2005 and with Dr. Smith since 2015. Anna received her dental assisting certificate from MATC and also holds a nursing assistant certificate. Anna lives in Port Washington with her husband and son. Her hobbies include travel, outdoor activities, reading and watching movies."]
+},
+{
+"name": "Kari",
+"modalTarget": "Kari",
+"image": "kari.jpg",
+"title": " Dental Assistant",
+"text": ["Kari was born and raised in Menomonee Falls. She graduated from Menomonee Falls High School in 2009 and received her Dental Assistant degree from Everest College. Shortly after graduating from Everest College, Kari began working as a dental assistant with Dr. Bill in 2011, and has been working with Dr. Smith since 2015. Kari enjoys working at the office and continually expanding her knowledge and experience in the field of dental assisting. Kari currently lives in Brown Deer with her son. In her spare time, Kari enjoys spending time with her family and friends, as well as watching movies, running and shopping."]
+},
+{
+"name": "Sue",
+"modalTarget": "Sue",
+"image": "sue.jpg",
+"title": " Dental Hygienist",
+"text": ["Sue began her career in dentistry volunteering for the American Red Cross Dental Assisting Program at Lockland Air Force Base in San Antonio, Texas. She started working with Dr. Bill in 2002 after graduating from MATC as a dental hygienist and has been working with Dr. Smith since 2015. Sue enjoys spending time with her family and friends, as well as participating in outdoor activities like camping, golfing and cycling."]
+},
+{
+"name": "Rebecca",
+"modalTarget": "Rebecca",
+"image": "rebecca.jpg",
+"title": " Dental Hygienist",
+"text": ["Rebecca grew up in Waukesha and recently moved to Wauwatosa. She graduated from WCTC in May 2016 with her Associates degree in Applied Science. Prior to becoming a dental hygienist, Rebecca worked as a dental assistant for 9 years in Waukesha. She recently joined Green Tree Dental and is excited to work with patients in promoting optimum oral hygiene. She really enjoys getting to know her patients and helping them to improve their oral health. She recently got engaged and is thrilled to be planning her special day. In her free time, Rebecca enjoys spending time with family and friends, watching hockey, and scrapbooking."]
+}
+] %}
+
 {% set socialMediaLinks = [
-    {
-        'media': 'google-plus',
-        'link': 'https://plus.google.com/u/0/103483112428513727035'
-    },
-    {
-        'media': 'yelp',
-        'link': 'https://www.yelp.com/biz/green-tree-dental-glendale'
-    },
-    {
-        'media': 'facebook',
-        'link': 'https://www.facebook.com/GreenTreeDentalmke/'
-    },
+{
+'media': 'google-plus',
+'link': 'https://plus.google.com/u/0/103483112428513727035'
+},
+{
+'media': 'yelp',
+'link': 'https://www.yelp.com/biz/green-tree-dental-glendale'
+},
+{
+'media': 'facebook',
+'link': 'https://www.facebook.com/GreenTreeDentalmke/'
+},
 ] %}
 {% extends 'layouts/index.twig' %}
