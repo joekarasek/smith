@@ -1,7 +1,7 @@
 #header.full-header {
   width: 100%;
 
-  $c-header: rgba(255, 255, 255, 0.80);
+  $c-header: rgba(0, 0, 0, 0.6);
   $c-menu-trigger: $c-black-blue;
 
   position: absolute;
@@ -13,10 +13,10 @@
   #primary-menu > ul {
     margin-right: 0;
     border-right: none;
-    @include nav-color(#5D6F7F);
-    @include nav-color(#334663, 1);
-    @include nav-color(#52931D, 2);
-    @include nav-color(#7F658F, 3);
+    @include nav-color(#ffffff);
+    //@include nav-color(#334663, 1);
+    //@include nav-color(#52931D, 2);
+    //@include nav-color(#7F658F, 3);
   }
 
   #primary-menu-trigger {
@@ -39,7 +39,7 @@
   //when you scroll down
   &.sticky-header {
     #header-wrap {
-      background-color: #FFFFFF;
+      background-color: #000000;
     }
   }
   #logo img {
@@ -64,7 +64,7 @@
 }
 
 #primary-menu ul li > a {
-  font-family: $ff-oswald;
+  font-family: $ff-raleway;
   font-weight: 400;
   letter-spacing: 1px;
   text-transform: none;
