@@ -1,0 +1,83 @@
+/// Call to Action Two to One Layout
+.cta__two-to-one {
+  background-position: center;
+  z-index: 100;
+  position: relative;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.6);
+
+  .flex--wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    @media screen and (max-width: $width-md) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .flex--item {
+    width: 33%;
+    @media screen and (max-width: $width-md) {
+      width: 100%;
+    }
+  }
+  .vertical-break {
+    width: 2px;
+    height: 30px;background-color: black;
+  }
+
+  .new-patient {
+    text-align: left;
+    padding-left: 15px;
+    border-left: 1px solid black;
+    .text {
+      color: #000000;
+      margin-bottom: 0;
+      font-weight: 400;
+    }
+    &-number {
+      color: #000000;
+      font-family: $ff-lato;
+      font-weight: 700;
+      margin-bottom: 0;
+      line-height: 1;
+      @include font-size(36px, 33px, 30px, 28px, 28px);
+      a {
+        @include link-color(#000000);
+        &:hover {
+          text-decoration: none;
+        }
+      };
+    }
+    @media screen and (max-width: $width-md) {
+      text-align: center;
+      padding-bottom: 15px;
+    }
+  }
+
+  .btn {
+    &--wrapper {
+      text-align: right;
+      padding-bottom: 5px;
+      padding-right: 15px;
+      //margin-right: 15px;
+      border-right: 1px solid black;
+    }
+  }
+
+  .existing-patient {
+    font-family: $ff-raleway;
+    text-align: center;
+    line-height: 1;
+    padding-bottom: 30px;
+    .phone-number--existing {
+      @include link-color(#000000);
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+}

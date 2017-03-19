@@ -1,13 +1,16 @@
-<section class="cta__three-to-one">
+<section class="cta__two-to-one">
     <div class="container">
         <div class="flex--wrapper">
-            <div class="new-patient flex--item">
-                <h5 class="text">New Patient Hotline</h5>
-                <h2 class="new-patient-number"><a href="tel:{{ newPhone }}">{{ newPhoneNoBreak }}</a></h2>
-            </div>
             <div class="btn--wrapper flex--item">
-                <a href="#" class="btn" data-target="#requestAppointmentForm" data-toggle="modal">Request An Appointment</a>
+               {% include 'atoms/request-appointment-button.twig' %}
+            </div>
+            <div class="new-patient flex--item">
+                <h6 class="text">New Patient Hotline</h6>
+                <h2 class="new-patient-number">
+                    {% include 'atoms/new-patient-number.twig' %}
+                </h2>
             </div>
         </div>
+        <p class="existing-patient">Existing Patients Call: {% include 'atoms/existing-patient-number.twig' %}</p>
     </div>
 </section>

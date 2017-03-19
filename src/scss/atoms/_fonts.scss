@@ -20,7 +20,7 @@ p {
 /// @group typography
 @mixin headings() {
 	line-height: 1.5;
-	font-family: $ff-oswald;
+	font-family: $ff-raleway;
 	font-weight: 400;
 }
 
@@ -62,7 +62,7 @@ p {
 
 @mixin h1() {
 	@include headings();
-	@include font-size(72px, 65px, 55px, 65px, 65px);
+	@include font-size(80px, 65px, 55px, 65px, 65px);
 }
 
 .h1,
@@ -73,7 +73,7 @@ h1 {
 
 @mixin h2() {
 	@include headings();
-	@include font-size(58px, 45px, 35px, 32px, 32px);
+	@include font-size(44px, 40px, 35px, 32px, 32px);
 }
 
 .h2,
@@ -116,7 +116,7 @@ h5 {
 
 @mixin h6() {
 	@include headings();
-	@include font-size(20px, 19px, 18px, 17px, 17px);
+	@include font-size(18px, 18px, 18px, 17px, 17px);
 }
 
 .h6,

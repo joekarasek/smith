@@ -1,15 +1,14 @@
 a.btn,
 button.btn {
-  font-family: $ff-lato;
-  font: 400 !important;
-  text-transform: uppercase;
+  font-family: $ff-raleway;
+  font: 700 !important;
 
-  background-color: #F19E05;
+  background-color: #64BB31;
   color: $c-white;
   border: 2px solid $c-white;
-  border-radius: 10px;
+  border-radius: 30px;
   &:hover, &:focus {
-    background-color: darken(#F19E05, 15% );
+    background-color: darken(#64BB31, 15% );
     text-decoration: none;
     color: $c-white;
   }
