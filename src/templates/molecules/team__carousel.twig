@@ -20,25 +20,5 @@
         </div>
     </div>
 
-    <!--Service Modals-->
-    <div class="team-modal-wrapper">
-        {% for person in team %}
-            <div id="team-modal{{ person.modalTarget }}" class="modal fade" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title">{{ person.name }}</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal-image"><img src="assets/team/{{ person.image }}" alt="team member"></div>
-                            {% for paragraph in person.text %}
-                                <p>{{ paragraph }}</p>
-                            {% endfor %}
-                        </div>
-                    </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
-            </div><!-- /.modal -->
-        {% endfor %}
-    </div>
+    {% include 'molecules/team__modals.twig' %}
 </div>

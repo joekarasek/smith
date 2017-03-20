@@ -1,71 +1,16 @@
 #section-services {
+  background-color: #F1F1F1;
   .heading {
     text-align: center;
     h2 {
-      color: #024378;
+      color: #000000;
+      font-weight: 700;
       text-align: center;
-      margin-bottom: 0;
+      margin-bottom: 10px;
       padding-top: $spacing-md;
       padding-bottom: $spacing-sm;
 
     }
-    p {
-      color: $c-grey;
-      padding-bottom: $spacing-md;
-      a {
-        @include link-color($c-teal-link);
-        text-decoration: underline;
-      }
-    }
   }
 
-  .services__slab {
-    background-size: cover;
-    padding-top: 150px;
-    padding-bottom: 150px;
-    border-bottom: 2px solid #84AF4A;
-    @media screen and (max-width: $width-md) {
-      padding-top: 30px;
-      padding-bottom: 0px;
-      background-color: #ffffff;
-      background-image: none !important;
-    }
-    .title {
-      font-family: $ff-lato;
-      font-weight: 700;
-      color: #557C91;
-      &--green {
-        font-family: $ff-oswald;
-        color: #84af4b;
-        @include font-size(55px,
-                40px,
-                35px,
-                30px,
-                30px);
-      }
-    }
-    .copy {
-      color: #535353;
-      font-family: $ff-lato;
-      font-size: 17px;
-      line-height: 1.5;
-    }
-    &--smile-makeover {
-      background-image: url('/assets/services/cosmetic.jpg');
-      background-position: center;
-    }
-    &--implant-dentistry {
-      background-image: url('/assets/services/implants.jpg');
-      background-position: center;
-    }
-    &--video-promo {
-      background-image: url('/assets/services/pediatric.jpg');
-      background-position: center;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      @media screen and (max-width: $width-md) {
-        padding-bottom: 0;
-      }
-    }
-  }
 }
