@@ -19,12 +19,30 @@
       '<img src="assets/carousel-arrow.png" alt="navigation arrow">'
     ]
   });
-  HelloWorldDevsTysonSteele.itemCarousel('.js-team-carousel', {
-    navText: [
-      '<img src="assets/carousel-arrow.png" alt="navigation arrow">',
-      '<img src="assets/carousel-arrow.png" alt="navigation arrow">'
-    ]
-  });
+  // HelloWorldDevsTysonSteele.itemCarousel('.js-tour-carousel', {
+  //   items: 1,
+  //   loop: true,
+  //   autoplay: true,
+  //   autoplaySpeed: 400,
+  //   autoplayTimeout: 6000,
+  //   autoplayHoverPause:true,
+  //   nav: true,
+  //   dots: false,
+  //   margin: 0,
+  //   responsive: {
+  //     480: {
+  //       items: 1
+  //     },
+  //     768: {
+  //       items: 1
+  //     },
+  //     992: {
+  //       items: 1
+  //     }
+  //   }
+  // });
+
+  // $('.js-tour-carousel').owlCarousel();
 
 
 }(jQuery, HelloWorldDevsTysonSteele));
