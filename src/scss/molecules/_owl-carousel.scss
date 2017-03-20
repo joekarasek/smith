@@ -1,4 +1,7 @@
+
+
 .owl-carousel .owl-nav [class*=owl-] {
+  img { display: none; }
   position: absolute;
   top: 50%;
   margin-top: -30px;
@@ -12,7 +15,6 @@
   border: none;
   font-size: 32px;
   border-radius: 0;
-  opacity: 1;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
@@ -27,6 +29,10 @@
   img {
     @include vertical-center;
   }
+}
+.owl-carousel:hover .owl-nav [class*=owl-] img {
+  display: block;
+  transition: display .3s ease;
 }
 .owl-carousel .owl-nav .owl-prev {
   left: -35px;
@@ -45,7 +51,6 @@
   right: -35px;
 }
 .owl-carousel:hover .owl-nav .owl-prev {
-  opacity: 1;
   left: -35px;
 }
 
