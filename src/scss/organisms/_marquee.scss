@@ -1,4 +1,4 @@
-#slider {
+#slider2 {
   height: 80vh;
   max-height: 800px;
   min-height: 700px;
@@ -19,11 +19,17 @@
     background-position: 30% center;
   }
 
-  .swiper-slide .row {
-    transform: translateY(-50%);
-    top: 50%;
-    position: relative;
+  .swiper-slide {
+    .container {
+      height: 100%;
+    }
+    .row {
+      transform: translateY(-50%);
+      top: 50%;
+      position: relative;
+    }
   }
+
 
   .slide1 {
     h1 {
