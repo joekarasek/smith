@@ -10,7 +10,7 @@
   background-image: url('/assets/no-insurance.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center center;
   @media (max-width: $width-sm - 1) {
     background-color: $c-mobile-bg;
     background-image: none;

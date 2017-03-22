@@ -16,3 +16,11 @@
 @import "atoms/*";
 @import "molecules/*";
 @import "organisms/*";
+
+//=============================
+//      Shame Styles
+//=============================
+
+.link-no-style:hover {
+  text-decoration: none !important;
+}
