@@ -14,6 +14,26 @@
   // ======= Carousels =======
   HelloWorldDevsTysonSteele.marqueeCarousel({ autoplay: 6000 });
   HelloWorldDevsTysonSteele.itemCarousel('.js-services-carousel', {
+    items: 2,
+    loop: true,
+    autoplay: true,
+    autoplaySpeed: 400,
+    autoplayTimeout: 6000,
+    autoplayHoverPause:true,
+    nav: true,
+    dots: false,
+    margin: 0,
+    responsive: {
+      480: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      992: {
+        items: 4
+      }
+    },
     navText: [
       '<img src="assets/carousel-arrow.png" alt="navigation arrow">',
       '<img src="assets/carousel-arrow.png" alt="navigation arrow">'

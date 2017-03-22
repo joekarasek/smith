@@ -12,10 +12,10 @@
     background-position: 30% center;
   }
   .swiper-slide.slide2 {
-    background-image: url('/assets/slide2.jpg');
+    background-image: url('/assets/slide3.jpg');
   }
   .swiper-slide.slide3 {
-    background-image: url('/assets/slide3.jpg');
+    background-image: url('/assets/slide2.jpg');
     background-position: 30% center;
   }
 
@@ -56,44 +56,52 @@
     }
   }
   .slide2 {
-    text-align: center;
-    h2 {
-      font-weight: 400;
-      color: #3A5464;
-      margin-bottom: 0;
-      line-height: 1.2;
-    }
-    .stars>h2 {
-      color: #f5e82e;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    }
-    .copy {
-      font-family: $ff-lato;
-      font-weight: 400;
-    }
-    .quoter {
+    .title {
+      color: white;
       font-weight: 700;
-      color: #656565;
+      margin-bottom: 5px;
+      line-height: 1;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
     }
-    .btn {
-      @include lr-padding(80px, 60px, 60px);
+    h2 {
+      color: white;
+      font-weight: 700;
+      line-height: 1.2;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
     }
+    h4 {
+      font-size: 22px;
+      color: white;
+      font-family: $ff-lato;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+    }
+    a {
+      margin-left: 5px;
+    }
+
   }
   .slide3 {
-    .title {
-      @include h1();
-      color: #85b04b;
-      margin-bottom: 0;
+    h1 {
+      @include font-size(70px, 58px, 55px, 65px, 65px);
+      color: white;
+      font-weight: 700;
+      margin-bottom: 5px;
+      line-height: 1;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
     }
-    .sub-title {
-      color: #4e748a;
+    h2 {
+      color: white;
+      @include font-size(44px, 35px, 35px, 32px, 32px);
       font-family: $ff-lato;
-      margin-bottom: 10px;
+      font-weight: 700;
+      line-height: 1.2;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
     }
-    .preventative-copy {
-      color: #535353;
+    h3 {
+      color: white;
+      line-height: 1.2;
       font-family: $ff-lato;
-      line-height: 1.3;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
     }
     .btn {
       @include lr-padding(80px, 60px, 60px);

@@ -25,7 +25,8 @@
   }
   .vertical-break {
     width: 2px;
-    height: 30px;background-color: black;
+    height: 30px;
+    background-color: black;
   }
 
   .new-patient {
@@ -52,6 +53,7 @@
       };
     }
     @media screen and (max-width: $width-md) {
+      border-left: none;
       text-align: center;
       padding-bottom: 15px;
     }
@@ -64,6 +66,12 @@
       padding-right: 15px;
       //margin-right: 15px;
       border-right: 1px solid black;
+      @media screen and (max-width: $width-md) {
+        text-align: center;
+        padding-right: 0;
+        border-right: none;
+
+      }
     }
   }
 

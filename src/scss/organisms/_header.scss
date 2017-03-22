@@ -7,6 +7,7 @@
   position: absolute;
   @media screen and (max-width: $width-md) {
     position: relative;
+    border-bottom: 0 solid;
   }
   font-family: $ff-oswald;
 
