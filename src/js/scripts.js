@@ -9,7 +9,7 @@
   HelloWorldDevsTysonSteele.requestAppointment('#mail-form', '#success_msg' , '7fb35345-752d-4792-9480-cd3db6674a62');
 
   // ======= Google Maps =======
-  HelloWorldDevsTysonSteele.googleMap('#google-map5', '35.3978095,-77.961373', '35.3978095,-77.961373');
+  HelloWorldDevsTysonSteele.googleMap('#google-map5', '43.1425159,-87.9126743', '43.1425159,-87.9126743');
 
   // ======= Carousels =======
   HelloWorldDevsTysonSteele.marqueeCarousel({ autoplay: 6000 });
@@ -39,30 +39,6 @@
       '<img src="assets/carousel-arrow.png" alt="navigation arrow">'
     ]
   });
-  // HelloWorldDevsTysonSteele.itemCarousel('.js-tour-carousel', {
-  //   items: 1,
-  //   loop: true,
-  //   autoplay: true,
-  //   autoplaySpeed: 400,
-  //   autoplayTimeout: 6000,
-  //   autoplayHoverPause:true,
-  //   nav: true,
-  //   dots: false,
-  //   margin: 0,
-  //   responsive: {
-  //     480: {
-  //       items: 1
-  //     },
-  //     768: {
-  //       items: 1
-  //     },
-  //     992: {
-  //       items: 1
-  //     }
-  //   }
-  // });
-
-  // $('.js-tour-carousel').owlCarousel();
 
 
 }(jQuery, HelloWorldDevsTysonSteele));

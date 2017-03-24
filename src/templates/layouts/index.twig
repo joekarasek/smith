@@ -18,13 +18,28 @@
 
     <div id="content" >
 
-        {% include 'molecules/cta__two-to-one.twig' %}
+        {% include 'molecules/cta__two-to-one.twig' with { 'id': 'id="cta-one"' } %}
 
         {% include 'organisms/about.twig' %}
 
         {% include 'organisms/specials.twig' %}
 
-        {% include 'molecules/cta__two-to-one.twig' %}
+        <div class="cta__two-to-one" id="cta-two">
+            <div class="container">
+                <div class="flex--wrapper">
+                    <div class="btn--wrapper flex--item">
+                        <h6 class="text">New Patient Hotline</h6>
+                        <h2 class="new-patient-number">
+                            <a href="tel:1-888-985-0068" class="phone-number phone-number--new">(888)&nbsp;985&#8209;0068</a>
+                        </h2>
+                    </div>
+                    <div class="new-patient flex--item">
+                        <a href="#" class="btn" data-target="#requestAppointmentForm" data-toggle="modal">Request An Appointment</a>
+                    </div>
+                </div>
+                <p class="existing-patient">Existing Patients Call<span class="hidden-lg hidden-md">:</span><br class="hidden-lg hidden-md"> <a href="tel:1-414-540-9530" class="phone-number phone-number--existing">(414)&nbsp;540&#8209;9530</a></p>
+            </div>
+        </div>
 
         {% include 'organisms/reviews.twig' %}
 

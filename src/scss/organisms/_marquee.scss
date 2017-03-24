@@ -41,15 +41,25 @@
     }
     h2 {
       color: white;
+      @include font-size(44px,
+              38px,
+              35px,
+              30px,
+              30px);
       font-weight: 700;
       line-height: 1.2;
       text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
     }
     h4 {
-      font-size: 22px;
+      @include font-size(28px,
+              22px,
+              35px,
+              30px,
+              30px);
       color: white;
       font-family: $ff-lato;
       text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+      text-transform: uppercase;
     }
     a {
       margin-left: 5px;

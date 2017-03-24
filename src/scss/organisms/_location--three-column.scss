@@ -63,10 +63,17 @@
       margin-bottom: 2px;
       line-height: 1;
     }
+    &__main--title {
+      @include font-size(22px,
+              18px,
+              18px,
+              17px,
+              16px);
+    }
     &__sub {
       color: #ffffff;
       font-family: $ff-raleway;
-      font-size: 15px;
+      font-size: 14px;
     }
   }
 

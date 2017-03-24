@@ -25,14 +25,15 @@
     font-weight: 700;
     @include font-size(56px, 52px, 45px, 40px, 35px);
     margin-bottom: 0;
+    line-height: 1.1;
     color: $c-no-insurance;
   }
   .sub-title {
-    //@include font-size(45px,
-    //                   40px,
-    //                   35px,
-    //                   30px,
-    //                   25px);
+    @include font-size(36px,
+                       32px,
+                       28px,
+                       28px,
+                       22px);
     font-family: $ff-lato;
     font-weight: 400;
     color: $c-sub-header;
