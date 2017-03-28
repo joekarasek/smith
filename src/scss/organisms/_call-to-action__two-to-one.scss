@@ -4,6 +4,7 @@
   z-index: 100;
   position: relative;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.6);
+  padding-bottom: 30px;
 
   .flex--wrapper {
     display: flex;
@@ -95,10 +96,9 @@
   }
 
   .existing-patient {
-    font-family: $ff-raleway;
+    font-family: $ff-lato;
     text-align: center;
     line-height: 1;
-    padding-bottom: 30px;
     .phone-number--existing {
       @include link-color(#000000);
       &:hover {

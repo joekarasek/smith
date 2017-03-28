@@ -113,13 +113,13 @@ var HelloWorldDevsTysonSteele = (function($,_) {
     });
 
     // kills menu offsets for tablet and mobile on initial load
-    if ($(window).width() < 993) {
+    if ($(window).width() < 992) {
       $primaryMenu.find('a').attr('data-offset', '-5');
     }
 
     // Watch for window resize events to toggle offset values
     $(window).resize(function() {
-      if ($(window).width() < 993) {
+      if ($(window).width() < 992) {
         // sets all menu offset to zero for mobile
         $primaryMenu.find('a').attr('data-offset', '-5');
       } else {

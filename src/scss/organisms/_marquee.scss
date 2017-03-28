@@ -1,11 +1,11 @@
 #slider2 {
-  height: 80vh;
-  max-height: 800px;
-  min-height: 700px;
-  @media (max-width: $width-lg) {
-    max-height: 800px;
-    min-height: 700px;
-  }
+  //height: 80vh;
+  //max-height: 800px;
+  //min-height: 700px;
+  //@media (max-width: $width-lg) {
+  //  max-height: 800px;
+  //  min-height: 700px;
+  //}
 
   .swiper-slide.slide1 {
     background-image: url('/assets/slide1.jpg');
@@ -20,6 +20,9 @@
   }
 
   .swiper-slide {
+    > img {
+      width: 100%;
+    }
     .container {
       height: 100%;
     }
@@ -72,18 +75,22 @@
       margin-bottom: 5px;
       line-height: 1;
       text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+      @media screen and (min-width: $width-md - 1) { padding-top: 40px; }
     }
-    h2 {
+    h2, h3 {
       color: white;
       font-weight: 700;
       line-height: 1.2;
       text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+      margin-bottom: 10px;
     }
     h4 {
       font-size: 22px;
       color: white;
       font-family: $ff-lato;
       text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+      @include font-size(25px, 21px, 18px, 22px, 22px);
+      margin-bottom: 10px;
     }
     a {
       margin-left: 5px;
@@ -98,6 +105,7 @@
       margin-bottom: 5px;
       line-height: 1;
       text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+      @media screen and (min-width: $width-md - 1) { padding-top: 40px; }
     }
     h2 {
       color: white;
@@ -149,6 +157,14 @@
     color: $c-star;
   }
 
+  .slide-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
 }
 
 #mobile-background {
@@ -157,4 +173,8 @@
     display: block;
     position: relative;
   }
+}
+
+.swiper_wrapper {
+  height: auto;
 }

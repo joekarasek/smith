@@ -12,5 +12,25 @@
 
     }
   }
+  .card--family .card__image {
+    background-position: 80% center;
+  }
+  .card--family .card__image::before {
+    content: 'Pictured: Andy Smith, DDS and his family';
+    color: #ffffff;
+    bottom: 0;
+    left: 15px;
+    position: absolute;
+    text-shadow: 0 2px 2px black;
+  }
 
+  .card--crowns .card__image {
+    background-position: 15% center;
+  }
+  .card--smile .card__image {
+     background-position: 75% center;
+   }
+  .card--dentures .card__image {
+    background-position: 15% center;
+  }
 }

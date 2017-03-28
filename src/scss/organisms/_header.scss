@@ -1,5 +1,6 @@
 #header.full-header {
   width: 100%;
+  height: 100px;
 
   $c-header: rgba(0, 0, 0, 0.6);
   $c-menu-trigger: $c-black-blue;
@@ -9,7 +10,6 @@
     position: relative;
     border-bottom: 0 solid;
   }
-  font-family: $ff-oswald;
 
   #primary-menu > ul {
     margin-right: 0;
@@ -23,10 +23,15 @@
   #primary-menu-trigger {
     font-size: 30px;
     pointer-events: auto;
+    float: left;
+    top: 25px;
   }
   #header-wrap {
     background-color: $c-header;
     border-bottom: 0;
+    @media screen and (max-width: $width-md) {
+      background-color: #4A4A4A;
+    }
   }
   #logo {
     padding-right: 0;
@@ -60,42 +65,64 @@
       }
     }
     #primary-menu-trigger {
-      right: 0;
-      left: inherit;
-      color: $c-menu-trigger;
+      right: auto;
+      left: 0;
+      color: #343B42;
     }
   }
-  
+
+  #primary-menu ul li {
+    @media screen and (max-width: $width-md) {
+      border-top: 1px solid white;
+      background-color: #4A4A4A;
+    }
+  }
+  #primary-menu ul li > a {
+    font-family: $ff-raleway;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: none;
+    font-size: 17px;
+    padding: 38px 12px !important;
+    @media screen and (max-width: 1300px) {
+      font-size: 16px;
+      padding: 38px 10px;
+      padding-bottom: 10px;
+    }
+    @media screen and (max-width: $width-lg) {
+      font-size: 15px;
+      letter-spacing: 0.7px;
+      padding: 38px 6px;
+      padding-bottom: 10px;
+    }
+    @media screen and (max-width: 1090px) {
+      font-size: 13px;
+    }
+    @media screen and (max-width: 991px) {
+      padding-left: 40px !important;
+      font-size: 18px;
+      padding: 29px 10px;
+    }
+    @media screen and (max-width: $width-sm) {
+    }
+    @media screen and (max-width: $width-xs) {
+    }
+    padding-bottom: 10px;
+  }
 }
 
-#primary-menu ul li > a {
-  font-family: $ff-raleway;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: none;
-  font-size: 17px;
-  padding: 29px 12px;
-  @media screen and (max-width: 1300px) {
-    font-size: 16px;
-    padding: 29px 10px;
-    padding-bottom: 10px;
-  }
-  @media screen and (max-width: $width-lg) {
-    font-size: 15px;
-    letter-spacing: 0.7px;
-    padding: 29px 6px;
-    padding-bottom: 10px;
-  }
-  @media screen and (max-width: 1090px) {
-    font-size: 13px;
-  }
-  @media screen and (max-width: 991px) {
-    padding-left: 40px !important;
-    font-size: 18px;
-  }
-  @media screen and (max-width: $width-sm) {
-  }
-  @media screen and (max-width: $width-xs) {
-  }
-  padding-bottom: 10px;
+
+
+//resize header from Canvas
+#header,
+#header-wrap,
+#logo,
+#logo img {
+  height: 100px !important;
+  transition: height .4s ease, opacity .3s ease;
+}
+
+
+#header.sticky-header:not(.static-sticky), #header.sticky-header:not(.static-sticky) #header-wrap, #header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
+  height: 100px !important;
 }
