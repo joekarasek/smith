@@ -16,7 +16,7 @@
       @media screen and (max-width: $width-md) {
         width: 50%;
       }
-      @media screen and (max-width: $width-md) and (min-width: $width-sm - 1) {
+      @media screen and (max-width: $width-md) and (min-width: $width-sm ) {
         padding-left: 60px;
       }
       @media screen and (max-width: $width-xs) {
@@ -33,7 +33,7 @@
       @media screen and (max-width: $width-md) {
         width: 50%;
       }
-      @media screen and (max-width: $width-md) and (min-width: $width-sm - 1) {
+      @media screen and (max-width: $width-md) and (min-width: $width-sm) {
         padding-left: 60px;
       }
       @media screen and (max-width: $width-xs) {
