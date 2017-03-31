@@ -22,7 +22,7 @@
     autoplayHoverPause:true,
     nav: true,
     dots: false,
-    margin: 0,
+    margin: 20,
     responsive: {
       480: {
         items: 2
